@@ -1,0 +1,23 @@
+{
+  "name": "group-project-boilerplate-2020",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "gulp server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codecooperative/group-project-boilerplate-2020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codecooperative/group-project-boilerplate-2020/issues"
+  },
+  "homepage": "https://github.com/codecooperative/group-project-boilerplate-2020#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2"
+  }
+}
