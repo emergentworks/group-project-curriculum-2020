@@ -1,3 +1,60 @@
-body {
-  background-color: green;
+/* MAIN LOGO IMAGE */
+#logo { 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* NAVIGATION */
+ul {
+  list-style: none;
+  text-align: center;
+  padding-bottom: 65px;
+}
+li {
+  display: inline;
+  padding-right: 40px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: #91E270;
+}
+/* MOTTO QUOTE */
+#motto {
+  text-align: center;
+  padding-bottom: 15px;
+}
+/* BODY OF DOCUMENT */
+
+.headlines {
+  text-align: center;
+  margin-bottom: -10px;
+}
+.headlineVideos {
+  display: block;
+  margin: 0 auto;
+  padding: 50px;
+}
+#headlinesPic {
+  display: block;
+  margin: 0 auto;
+  padding: 50px;
+  width: 560px;
+  height: 315px;
+}
+button {
+  background-color: #91E270;
+}
+button:hover {
+  background: #3233FF;
+}
+.headlineButtons {
+  display: block;
+  margin: 0 auto;
+}
+/* To color first part of headlines */
+.headlineTopic {
+  color: #3233FF;
 }
