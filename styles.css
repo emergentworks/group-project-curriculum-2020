@@ -62,6 +62,17 @@ button:hover {
   color: #3233FF;
 }
 
-#tutorial-series-boxes {
+#tutorial-series-full {
+  border: 5px solid #3233FF;
   text-align: center;
+  padding: 30px;
+}
+
+.tutorial-boxes {
+  border: 1px solid #91E270;
+  padding-bottom: 50px;
+  margin: auto;
+  width: 90%;
+  text-align: center;
+  margin-bottom: 40px;
 }
