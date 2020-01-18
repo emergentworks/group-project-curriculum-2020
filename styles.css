@@ -61,3 +61,7 @@ button:hover {
 .headlineTopic {
   color: #3233FF;
 }
+
+#tutorial-series-boxes {
+  text-align: center;
+}
