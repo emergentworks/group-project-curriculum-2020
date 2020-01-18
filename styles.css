@@ -1,10 +1,10 @@
-/* MAIN LOGO IMAGE */
-#logo {
+/* ~~~~~~~~~~HEADER SECTION~~~~~~~~~~ */
+#logo { /* central logo image*/
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-/* NAVIGATION */
+    /* navigation bar */
 ul {
   list-style: none;
   text-align: center;
@@ -18,20 +18,23 @@ a {
   text-decoration: none;
   color: black;
 }
-a:hover {
+a:hover { /* color on hover */
   color: #91E270;
 }
-a:active {
+a:active { /* color on active */
   color:#3233FF;
 }
-/* MOTTO QUOTE */
-#motto {
+#motto { /* motto quote */
   text-align: center;
   padding-bottom: 15px;
 }
-/* BODY OF DOCUMENT */
-
-.headlines {
+/* ~~~~~~~~~~BODY SECTION~~~~~~~~~~ */
+/* "home-headlines-full" div container:(main box for 3 headlines)*/
+#home-headlines-full {
+  border: 5px solid #3233FF;
+}
+.home-headlines {
+  border: 1px solid #91E270;
   text-align: center;
   margin-bottom: -10px;
 }
@@ -57,10 +60,6 @@ button:hover {
   display: block;
   margin: 0 auto;
 }
-/* To color first part of headlines */
-.headlineTopic {
-  color: #3233FF;
-}
 
 #tutorial-series-full {
   border: 5px solid #3233FF;
@@ -75,4 +74,8 @@ button:hover {
   width: 90%;
   text-align: center;
   margin-bottom: 40px;
+}
+
+form {
+  text-align: center;
 }
