@@ -1,81 +1,120 @@
-/* ~~~~~~~~~~HEADER SECTION~~~~~~~~~~ */
-#logo { /* central logo image*/
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+/* GENERAL STYLE */
+body {
+  background-color: white;
 }
-    /* navigation bar */
-ul {
-  list-style: none;
+/* text style guide */
+.headline-text {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.subheadline-text {
+  font-family: 'Poppins', sans-serif;
+}
+.paragraph-text {
+  font-family: 'Montserrat', sans-serif;
+}
+/* footer */
+#footer-box {
+  border: 2px solid #3F3B3C;
   text-align: center;
-  padding-bottom: 65px;
+  padding: 10px;
+  margin-top: 10px;
 }
-li {
-  display: inline;
-  padding-right: 40px;
+/* HOMEPAGE */
+/* homepage header */
+#home-header-box {
+  border: 2px solid #3F3B3C;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* navigation bar */
+#navigation-bar-box {
+  border: .5px dotted #3F3B3C;
 }
 a {
-  text-decoration: none;
-  color: black;
+  text-decoration:none;
+  color: #3F3B3C;
 }
-a:hover { /* color on hover */
-  color: #91E270;
+a:hover {
+  color:#91E270;
 }
-a:active { /* color on active */
-  color:#3233FF;
+a:active {
+  color: ;
 }
-#motto { /* motto quote */
-  text-align: center;
-  padding-bottom: 15px;
-}
-/* ~~~~~~~~~~BODY SECTION~~~~~~~~~~ */
-/* "home-headlines-full" div container:(main box for 3 headlines)*/
-#home-headlines-full {
-  border: 5px solid #3233FF;
-}
-.home-headlines {
-  border: 1px solid #91E270;
-  text-align: center;
-  margin-bottom: -10px;
-}
-.headlineVideos {
-  display: block;
-  margin: 0 auto;
-  padding: 50px;
-}
-#headlinesPic {
-  display: block;
-  margin: 0 auto;
-  padding: 50px;
-  width: 560px;
-  height: 315px;
-}
-button {
-  background-color: #91E270;
-}
-button:hover {
-  background: #3233FF;
-}
-.headlineButtons {
-  display: block;
-  margin: 0 auto;
+ul {
+  list-style-type: none;
 }
 
-#tutorial-series-full {
-  border: 5px solid #3233FF;
-  text-align: center;
-  padding: 30px;
+li {
+  display: inline;
+  padding: 20px;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
-
-.tutorial-boxes {
-  border: 1px solid #91E270;
-  padding-bottom: 50px;
+#navBreak {
+  padding-right: 810px;
+}
+/* code cooperative logo image */
+#logo-img {
+  text-align: center;
+  display: inline-block;
+  border: .5px dotted #3F3B3C;
+  min-width: 150px;
+  min-height: 150px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-left: 550px;
+}
+img {
+display: inline-block
+}
+/* ... logo  animation */
+ img:hover {
+   animation: rotation 2s infinite linear;
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+/* motto statement */
+#motto {
+  border: .5px dotted #3F3B3C;
   margin: auto;
-  width: 90%;
+  margin-top: 10px;
+  margin-left: 320px;
+  display: inline-block;
   text-align: center;
-  margin-bottom: 40px;
+  padding: 10px;
 }
-
-form {
+#motto-text {
+  color: #3F3B3C;
+}
+/* homepage body */
+#home-body-box {
+  border: 2px solid #3F3B3C;
   text-align: center;
+  padding: 10px;
+  margin-top: 10px;
 }
+/* individual headline boxes */
+  .body-box-headlines {
+    border: .5px dotted #3F3B3C;
+    width: 70%;
+    height: 33%;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 20px;
+    display: inline-block;
+  }
+  /* footer */
+  
+  #footer-box {
+    display: block;
+  }
+  .icons {
+    width: 16px;
+    height: 16px;
+  }
