@@ -18,7 +18,14 @@ body {
   text-align: center;
   padding: 10px;
   margin-top: 10px;
+  display: block;
+  }
+  .icons {
+    width: 16px;
+    height: 16px;
+  }
 }
+  
 /* HOMEPAGE */
 /* homepage header */
 #home-header-box {
@@ -39,7 +46,7 @@ a:hover {
   color:#91E270;
 }
 a:active {
-  color: ;
+  color: #91E270;
 }
 ul {
   list-style-type: none;
@@ -68,7 +75,7 @@ img {
 display: inline-block
 }
 /* ... logo  animation */
- img:hover {
+ img.logo:hover {
    animation: rotation 2s infinite linear;
   }
   @keyframes rotation {
@@ -84,7 +91,7 @@ display: inline-block
   border: .5px dotted #3F3B3C;
   margin: auto;
   margin-top: 10px;
-  margin-left: 320px;
+  margin-left: 340px;
   display: inline-block;
   text-align: center;
   padding: 10px;
@@ -109,12 +116,27 @@ display: inline-block
     padding: 20px;
     display: inline-block;
   }
-  /* footer */
-  
-  #footer-box {
-    display: block;
-  }
-  .icons {
-    width: 16px;
-    height: 16px;
-  }
+/* homepage footer */
+/* TUTORIALS PAGE */
+/* tutorials header */
+
+/* tutorials body */
+#tuts-body-box {
+  border: 2px solid #3F3B3C;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+#tuts-filter-box {
+  border: .5px dotted #3F3B3C;
+  padding: 10px;
+}
+#featured-tuts-box {
+  border: .5px dotted #3F3B3C;
+  padding: 10px;
+  margin-top: 30px;
+}
+.tags {
+  color: #91E270;
+  margin-left: 4px;
+}

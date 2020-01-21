@@ -1,52 +1,63 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Tutorials Page</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header>
-    <a href="index.html"><img id="logo" src="assets/logo.png"></a>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tribe Called Code: Tutorials</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Montserrat|Poppins&display=swap" rel="stylesheet">
+  <script src="index.js"></script>
+</head>
+<body>
+<!-- HEAD -->
+<div id="home-header-box">
+<header>
 <!--navigation bar-->
-      <div id="navigationBar">
-        <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="#">TUTORIALS</a></li> <!--"#" = blank page placeholder-->
-        <li><a href="#">BLOG</a></li>
-        <li><a href="#">RESOURCES</a></li>
-        <li><a href="#">SUPPORT</a></li>
-        </ul>
-      </div>
-    </header>
-  <div id="tutorial-series-full">
-    <!-- tutorial series 1 goes here-->
-    <div class="tutorial-boxes">
-      <h1>HTML & CSS CHALLENGE</h1>
-      <p>Donec rutrum congue leo eget malesuada. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh.</p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/hb7Q33ysCwI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/xfBWk4nw440" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-<!--tutorial series 2 goes here-->
-    <div class="tutorial-boxes">
-      <h1>DIGITAL LITERACY</h1>
-      <p>Donec rutrum congue leo eget malesuada. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh.</p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/X4rU02088Xc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Fkd9TWUtFm0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-<!--tutorial series 3 goes here-->
-  <div class="tutorial-boxes">
-    <h1>OTHER LESSON SERIES</h1>
-    <p>Donec rutrum congue leo eget malesuada. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh.</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/XOLOLrUBRBY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/FSYCwxt78jY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div id="navigation-bar-box">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="tutorials.html">TUTORIALS</a></li>
+      <li id="navBreak"><a href="index.html">BLOG</a></li>
+      <li><a href="index.html">RESOURCES</a></li>
+      <li id="navEnd"><a href="index.html">ABOUT</a></li>
+    </ul>
+  </div>
+<!--logo image-->
+  <div id="logo-img">
+    <img class="logo" src="assets/logo.png" alt="The Code Cooperative Logo. A green circle with the code cooperative blue text.">
   </div>
 </div>
+</header>
+<!-- BODY -->
+<body>
+  <div id="tuts-body-box">
+    <div id="tuts-filter-box">
+    <form action="get">
+       <label for="topic">What do you want to learn?</label>
+        <input id="topic" type="search" placeholder="ex. html, css" required>
+        <label for="experience">What's your experience level?</label>
+        <select id="experience name="experience" required>
+           <option value="beginner">Beginner</option>
+           <option value="intermediate">Intermediate</option>
+           <option value="advanced">Advanced</option>
+        </select>
+        <br><br>
+        <label>What type of learning?</label>
+        <br>
+        <input type="checkbox" name="tutorials" id=""><span class="tags">Tutorials</span>
+        <input type="checkbox" name="courses" id=""><span class="tags">Courses</span>
+        <input type="checkbox" name="books-reads" id=""><span class="tags">Books & Readings</span>
+        <br>
+        <input type="checkbox" name="games" id=""><span class="tags">Coding Games</span>
+        <input type="checkbox" name="videos-lectures" id=""><span class="tags">Videos & Lectures</span>
+        <br><br>
+        <button>Find Your Matches!</button>
+      </form>
+    </div>
+    <div id="featured-tuts-box">
+      <h1 class="feat">Featured Tutorials</h1>
+    </div>
+  </div>
 </body>
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="./index.js"></script>
-    <title>Tribe Called Code: Tutorials Page</title>
-  </head>
-  <body>
-  </body>
 </html>
