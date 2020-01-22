@@ -5,6 +5,7 @@ body {
 /* text style guide */
 .headline-text {
   font-family: 'IBM Plex Sans', sans-serif;
+  color:#4A7EBF
 }
 .subheadline-text {
   font-family: 'Poppins', sans-serif;
@@ -125,18 +126,19 @@ display: inline-block
   border: 2px solid #3F3B3C;
   text-align: center;
   padding: 10px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
-#tuts-filter-box {
-  border: .5px dotted #3F3B3C;
-  padding: 10px;
+#filter-form {
+  border:.5px dotted #3F3B3C;
+  width: 80%;
+  margin: auto;
 }
-#featured-tuts-box {
-  border: .5px dotted #3F3B3C;
-  padding: 10px;
-  margin-top: 30px;
-}
-.tags {
+.learn-type {
   color: #91E270;
   margin-left: 4px;
+}
+
+.featured-content {
+  border:.5px dotted #3F3B3C;
+  margin-bottom: 40px;
 }
