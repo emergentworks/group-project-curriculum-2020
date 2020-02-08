@@ -98,3 +98,16 @@ label {
     width: 30px;
     height: 30px;
 }
+/* ####### */
+/* FILTERED PAGE */
+
+
+/* .social-filter {
+    width: 10px;
+    height: 10px;
+} */
+
+.row-boxes {
+    border: 2px solid red;
+    margin-bottom: 50px;
+}
