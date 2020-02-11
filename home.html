@@ -8,13 +8,15 @@
     <!-- BOOTSTRAP CSS here -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- LOCAL STYLE -->
-    <link rel="stylesheet" href="local-style.css">
+    <link rel="stylesheet" href="home.style.css">
     <!-- GOOGLE FONTS LINK -->
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Montserrat|Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
+<!-- ###HEADER start -->
 <header>
     <div class="container">
+        <!-- TOP ROW: NAV & SOCIAL BAR -->
         <div id="top-header" class="row">
           <!-- NAVIGATION BAR -->
           <div id="navigation-bar" class="col-sm-8">
@@ -24,7 +26,7 @@
                 <a href="about.html"><button id="about-button" class="btn btn-sm btn-outline-secondary" type="button">ABOUT</button></a>
                 </form>
             </nav>
-            </div>
+          </div>
           <!-- SOCIAL BAR -->
           <div id="social-media-bar" class="col-sm-4">
               <a href="#"><img class="social-icons" src="assets/facebook.svg" alt=""></a>
@@ -33,9 +35,9 @@
               <a href="#"><img class="social-icons" src="assets/twitter.svg" alt=""></a>
           </div>
         </div>
-<!-- MIDDLE SECTION: (FILTER JUMBOTRON, FILTER BOX, LOGO IMAGE)-->
+        <!-- MIDDLE ROW: FILTER & LOGO IMAGE -->
         <div class="row">
-          <!-- FILTER JUMBOTRON -->
+          <!-- filter jumbotron -->
           <div class="col-sm">
             <div id="filter-jumbotron" class="jumbotron">
               <h1 class="display-4 heading-text">CURATED FOR YOU!</h1>
@@ -43,9 +45,10 @@
               <hr class="my-4">
               <p>Or explore our top picks in the featured content section of this page</p>
             </div>
-        </div>
-          <!-- FILTER FUNCTION -->
+          </div>
+          <!-- filter box -->
           <div id="filter-box" class="col-sm">
+              <!-- topic input -->
               <h2 class="subheading-text">PICK YOUR TOPIC</h2>
                 <button type="button" class="btn btn-outline-primary">#HTML</button>
                 <button type="button" class="btn btn-outline-secondary">#CSS</button>
@@ -54,94 +57,126 @@
                 <button type="button" class="btn btn-outline-warning">#MAYA</button>
                 <button type="button" class="btn btn-outline-info">#MYSQL</button>
                 <button type="button" class="btn btn-outline-dark">#GIT</button>
-              <h2 class="subheading-text">WHAT'S YOUR EXPERIENCE?</h2>
+                <!-- experience input -->
+              <h2 class="subheading-text"style="padding-top:15px;">WHAT'S YOUR EXPERIENCE?</h2>
                 <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                <label class="form-check-label" for="inlineRadio1">newbie</label>
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">newbie</label>
+                  </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">rookie</label>
                 </div>
                 <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                <label class="form-check-label" for="inlineRadio2">rookie</label>
-                </div>
-                <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                <label class="form-check-label" for="inlineRadio2">expert</label>
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">expert</label>
                 </div>
                 <br><br>
+                <!-- learn mode input -->
               <h2 class="subheading-text">HOW DO YOU WANT TO LEARN?</h2>
                 <div class="dropdown">
-                <button id="learning-mode-button" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <button id="learning-mode-button" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Choose Your Mode
-                </button>
+                  </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <button class="dropdown-item" type="button">Take A Course</button>
-                <button class="dropdown-item" type="button">Watch a Video Tutorial</button>
-                <button class="dropdown-item" type="button">Play A Coding Game</button>
-                <button class="dropdown-item" type="button">Read A Book</button>
+                  <button class="dropdown-item" type="button">Take A Course</button>
+                  <button class="dropdown-item" type="button">Watch a Video Tutorial</button>
+                  <button class="dropdown-item" type="button">Play A Coding Game</button>
+                  <button class="dropdown-item" type="button">Read A Book</button>
                 </div>
+                <!-- go button -->
                 <button id="go-button" class="btn btn-primary" type="submit">GO!</button>
-
-                </div>
+            </div>
                 <br>
           </div>
-          <!-- LOGO IMAGE -->
+          <!-- logo image -->
           <div class="col-sm">
             <img id="logo-image" src="assets/logo.png" alt="">
           </div>
         </div>
-      </div>
+    </div>
 </header>
+<!-- HEADER end### -->
 <br><br>
-<div class="row">
-  <div class="col">
-    <!-- CARD: FEATURED COURSE -->
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="assets/dummy.png" alt="Card image cap">
-      <div class="card-body">
-      <h5 class="card-title heading-text">FEATURED COURSE: FreeCodeCamp Web Dev</h5>
-      <p class="card-text paragraph-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary heading-text card-buttons">Go Code!</a>
+<!-- ###FEATURES TOP ROW start -->
+    <div class="row" style="margin-bottom: 20px;">
+      <!-- card: featured course -->
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="assets/dummy.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title heading-text">FEATURED COURSE: FreeCodeCamp Web Dev</h5>
+              <p class="card-text paragraph-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary heading-text card-buttons">Go Code!</a>
+            </div>
+          </div>
+      </div>
+       <!-- ### -->
+      <!-- card: featured tutorial -->
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="assets/dummy.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title heading-text">FEATURED TUTORIAL: Learn Javascript in 3hrs</h5>
+              <p class="card-text paragraph-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary heading-text card-buttons">Go Code!</a>
+            </div>
+        </div>
+      </div>
+      <!-- ### -->
+      <!-- card: featured game -->
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="test-dummy.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title heading-text">FEATURED GAME: Scratch Adventure Time</h5>
+              <p class="card-text paragraph-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary heading-text card-buttons">Go Code!</a>
+            </div>
+        </div>
       </div>
     </div>
-    <!-- ## -->
-  </div>
-  <div class="col">
-    <!-- CARD: FEATURED COURSE -->
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="assets/dummy.png" alt="Card image cap">
-      <div class="card-body">
-      <h5 class="card-title heading-text">FEATURED TUTORIAL: Learn Javascript in 3hrs</h5>
-      <p class="card-text paragraph-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary heading-text card-buttons">Go Code!</a>
+<!-- FEATURES TOP ROW end### -->
+  <br>
+<!-- ###FEATURES SECOND ROW start -->
+    <div class="row">
+      <!-- card: featured book -->
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="assets/dummy.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title heading-text">FEATURED BOOK: Eloquent Javascript</h5>
+              <p class="card-text paragraph-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary heading-text card-buttons">Go Code!</a>
+            </div>
+        </div>
       </div>
-    </div>
-    <!-- ## -->
-  </div>
-  <div class="col">
-    <!-- CARD: FEATURED COURSE -->
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="assets/dummy.png" alt="Card image cap">
-      <div class="card-body">
-      <h5 class="card-title heading-text">FEATURED GAME: Scratch Adventure Time</h5>
-      <p class="card-text paragraph-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary heading-text card-buttons">Go Code!</a>
+      <!-- ### -->
+      <!-- card: featured code coop lectures -->
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="assets/dummy.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title heading-text">FEATURED BOOK: Eloquent Javascript</h5>
+              <p class="card-text paragraph-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary heading-text card-buttons">Go Code!</a>
+            </div>
+          </div>
       </div>
-    </div>
-    <!-- ## -->
-  </div>
-  <div class="col">
-    <!-- CARD: FEATURED COURSE -->
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="assets/dummy.png" alt="Card image cap">
-      <div class="card-body">
-      <h5 class="card-title heading-text">FEATURED BOOK: Eloquent Javascript</h5>
-      <p class="card-text paragraph-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary heading-text card-buttons">Go Code!</a>
+      <!-- ### --> 
+      <!-- card: about code coop -->
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="assets/dummy.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title heading-text">FEATURED BOOK: Eloquent Javascript</h5>
+              <p class="card-text paragraph-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary heading-text card-buttons">Go Code!</a>
+            </div>
+          </div>
       </div>
-    </div>
-    <!-- ## -->
   </div>
-</div>
+<!-- FEATURES SECOND ROW end### -->
 <br><br><br>
 <!-- FOOTER SECTION -->
 <footer>
@@ -160,9 +195,6 @@
   </div>
 </footer>
 <br>
-
-
-
     <!-- BOOTSTRAP SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
