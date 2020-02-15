@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Bootstrap meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Local CSS-->
+    <link rel="stylesheet" href="stylesheet.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon|Open+Sans&display=swap" rel="stylesheet">
+    <title>JUST CODIN': HTML LEARNING RESOURCES</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+  <header class="header-box">
+    <!-- NAVIGATION (home & about links)s -->
+    <div class="container">
+      <div class="row">
+        <div class="col header">
+          <a class="main-nav" href="#">
+            <h1 class="nav-pages hvr-skew-forward">HOME</h1>
+          </a>
+        </div>
+        <div class="col-6 header">
+          <img class="hvr-float" src="assets/logo.png" alt="">
+        </div>
+        <div class="col header">
+          <a class="main-nav" href="#">
+            <h1 class="nav-pages hvr-skew-backward">ABOUT</h1>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+<br>
+<!-- BUTTON MENU -->
+    <div id="topic-filter" class="container button-menu-bar">
+      <div  class="filter-row">
+        <h2 class="filter-instructions">PICK YOUR TOPIC: </h2>
+      <div>
+            <button id="button-menu-all" class="btn active btn-menu" onclick="setTopicFilter('all-topics')">#ALL</button>
+            <button id="button-menu-html" class="btn btn-menu" onclick="setTopicFilter('html')">#HTML</button>
+            <button id="button-menu-css" class="btn btn-menu"  onclick="setTopicFilter('css')">#CSS</button>
+            <button id="button-menu-javascript" class="btn btn-menu" onclick="setTopicFilter('javascript')">#JAVASCRIPT</button>
+            <button id="button-menu-python" class="btn btn-menu" onclick="setTopicFilter('python')">#PYTHON</button>
+      </div>
+      </div>
+    </div>
+    <br>
+    <!--  -->
+    <div id="type-filter" class="container button-menu-bar">
+      <div class="filter-row">
+        <h2 class="filter-instructions">PICK YOUR LEARNING MODE: </h2>
+            <button id="button-menu-all" class="btn active btn-sm" onclick="setModeFilter('all-types')">#ALL</button>
+            <button id="button-menu-courses" class="btn btn-sm" onclick="setModeFilter('courses')">#COURSES</button>
+            <button id="button-menu-tutorials" class="btn btn-sm" onclick="setModeFilter('tutorials')">#TUTORIALS</button>
+            <button id="button-menu-games" class="btn btn-sm" onclick="setModeFilter('games')">#GAMES</button>
+            <button id="button-menu-books" class="btn btn-sm" onclick="setModeFilter('books')">#BOOKS</button>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+
+<!--CARD ROW-->
+<div class="row card-rows">
+      <!-- card 1 -->
+      <div class="card filterDiv all-topics all-types css games card-games hvr-ripple-in hvr-float" style="width: 18rem;" data-topic="css" data-type="games">
+        <img class="card-img-top" src="assets/card-previews/html-css/css-grid-garden.png" alt="This is a screenshot of the cssgridegarden.com website.">
+        <div class="card-body">
+          <h5 class="card-title">CSS GRID GARDEN</h5>
+          <h6 class="card-subtitle">cssgridgarden.com</h6>
+          <span class="badge badge-pill badge-games">#games</span>
+          <span class="badge badge-pill badge-css">#css</span>
+          <p class="card-text">A game for learning CSS grid. Write CSS to grow your carrot garden!</p>
+          <a href="https://cssgridgarden.com/" class="btn btn-primary card-redirect-button redirect-games">GO PLAY!</a>
+        </div>
+      </div>
+        <!-- card 2 -->
+        <div class="card filterDiv all-topics all-types javascript book card-books hvr-ripple-in hvr-float" style="width: 18rem;" data-topic="javascript" data-type="books">
+          <img class="card-img-top" src="assets/card-previews/javascript/eloquent-javascript.png" alt="This is a screenshot of the index page of the Eloquent Javascript ebook.">
+          <div class="card-body">
+            <h5 class="card-title">ELOQUENT JAVASCRIPT: A MODERN INTRODUCTION TO PROGRAMMING (3rd Edition)</h5>
+            <h6 class="card-subtitle">by Marjin Haverbeke</h6>
+            <span class="badge badge-pill badge-books">#books</span>
+            <span class="badge badge-pill badge-javascript">#javascript</span>
+            <p class="card-text">This is a book about JavaScript, programming, and the wonders of the digital.</p>
+            <a href="https://eloquentjavascript.net/" class="btn btn-primary card-redirect-button redirect-tutorials redirect-books">READ IT ONLINE!</a>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="card filterDiv all-topics all-types tutorials html css javascript card-tutorials hvr-ripple-in hvr-float" style="width: 18rem;" data-topic="html,css,javascript" data-type="tutorials">
+          <img class="card-img-top" src="assets/card-previews/general/the-coding-train.png" alt="This is a screenshot of thecodingtrain.com website">
+          <div class="card-body">
+            <h5 class="card-title">THE CODING TRAIN</h5>
+            <h6 class="card-subtitle">thecodingtrain.com</h6>
+            <span class="badge badge-pill badge-tutorials">#tutorials</span>
+            <span class="badge badge-pill badge-html">#html</span>
+            <span class="badge badge-pill badge-css">#css</span>
+            <span class="badge badge-pill badge-javascript">#javascript</span>
+            <p class="card-text">All aboard the Coding Train with Daniel Shiffman, a YouTube channel dedicated to beginner-friendly creative coding tutorials and challenges.</p>
+            <a href="https://thecodingtrain.com/" class="btn btn-primary card-redirect-button redirect-tutorials">WATCH A VIDEO!</a>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="card  filterDiv all-topics all-types games css card-games hvr-ripple-in hvr-float" style="width: 18rem;" data-topic="css" data-type="games">
+          <img class="card-img-top" src="assets/card-previews/html-css/flexbox-froggy.png" alt="This is a screenshot of the flexboxfroggy.com website.">
+          <div class="card-body">
+            <h5 class="card-title">FLEXBOX FROGGY: A GAME FOR LEARNING CSS FLEXBOX</h5>
+            <h6 class="card-subtitle">flexboxfroggy.com</h6>
+            <span class="badge badge-pill badge-games">#games</span>
+            <span class="badge badge-pill badge-css">#css</span>
+            <p class="card-text">Help Froggy and friends by writing CSS code!</p>
+            <a href="https://flexboxfroggy.com/" class="btn btn-primary card-redirect-button redirect-games">GO PLAY!</a>
+          </div>
+        </div>
+        <!-- card  5 -->
+          <div class="card filterDiv all-topics all-types  games html javascript python card-games hvr-ripple-in hvr-float" style="width: 18rem;" data-topic="javascript,python,html" data-type="games">
+            <img class="card-img-top" src="assets/card-previews/general/code-combat.png" alt="This is a screenshot of the codecombat.com website.">
+            <div class="card-body">
+              <h5 class="card-title">CodeCombat</h5>
+              <h6 class="card-subtitle">codecombat.com</h6>
+              <span class="badge badge-pill badge-games">#games</span>
+              <span class="badge badge-pill badge-html">#html</span>
+              <span class="badge badge-pill badge-javascript">#javascript</span>
+              <span class="badge badge-pill badge-python">#python</span>
+              <p class="card-text"> Learn Python, JavaScript, and HTML as you solve puzzles and learn to make your own coding games.</p>
+              <a href="https://codecombat.com/" class="btn btn-primary card-redirect-button redirect-games">GO PLAY!</a>
+            </div>
+          </div>
+      <!-- card 6 -->
+          <div class="card filterDiv all-topics all-types tutorials html css javascript card-tutorials hvr-ripple-in hvr-float" style="width: 18rem;" data-topic="html,css,javascript" data-type="tutorials">
+            <img class="card-img-top" src="assets/card-previews/general/az-computing-concepts.png" alt="This is a screenshot of the maxw.com website.">
+            <div class="card-body">
+              <h5 class="card-title">A-Z OF COMPUTING CONCEPTS</h5>
+              <h6 class="card-subtitle">Max Wainewright</h6>
+              <span class="badge badge-pill badge-games">#tutorials</span>
+              <span class="badge badge-pill badge-html">#html</span>
+              <span class="badge badge-pill badge-css">#css</span>
+              <span class="badge badge-pill badge-javascript">#javascript</span>
+              <p class="card-text">Learn the alphabet of computing concepts in this short informational video series.</p>
+              <a href="https://www.maxw.com/a-z/index.html" class="btn btn-primary card-redirect-button redirect-games">GO PLAY!</a>
+            </div>
+          </div>
+      <!-- card 7 -->
+      <div class="card filterDiv  all-topics all-types books javascript card-books hvr-ripple-in hvr-float" style="width: 18rem;" data-topic="javascript" data-type="books">
+        <img class="card-img-top" src="assets/card-previews/javascript/scratchthree-games.png" alt="This is a screenshot of the maxw.com website.">
+        <div class="card-body">
+          <h5 class="card-title">25 SCRATCH 3 GAMES FOR KIDS</h5>
+          <h6 class="card-subtitle">Max Wainewright</h6>
+          <span class="badge badge-pill badge-books">#books</span>
+          <span class="badge badge-pill badge-javascript">#javascript</span>
+          <p class="card-text">Learn how to make fun games with Scratch -a free, beginner-friendly programming language from the MIT Media Lab.</p>
+          <a href="https://www.maxw.com/books/25_scratch_3_games_for_kids/index.html" class="btn btn-primary card-redirect-button redirect-books">BOOK INFO!</a>
+        </div>
+      </div>
+    <!-- card 8-->
+    <div class="card filterDiv  all-topics all-types courses html css card-courses hvr-ripple-in hvr-float" style="width: 18rem;" data-topic="html,css" data-type="courses">
+      <img class="card-img-top" src="assets/card-previews/html-css/responsive-web-design.png" alt="">
+      <div class="card-body">
+        <h5 class="card-title">freeCodeCamp: Responsive Web Design Certification (300 hrs)</h5>
+        <h6 class="card-subtitle">freecodecamp.org</h6>
+        <span class="badge badge-pill badge-courses">#courses</span>
+        <span class="badge badge-pill badge-html">#html</span>
+        <span class="badge badge-pill badge-css">#css</span>
+        <span class="badge badge-pill badge-cert">#cert</span>
+        <p class="card-text">Learn the foundations of HTML, CSS, Visual Design, Accessibility, etc.</p>
+        <a href="https://www.freecodecamp.org/learn" class="btn btn-primary card-redirect-button redirect-courses">HEAD TO CLASS!</a>
+      </div>
+    </div>
+    <!-- card 9 -->
+    <div class="card filterDiv all-topics all-types tutorials javascript card-tutorials hvr-ripple-in hvr-float" style="width: 18rem;" data-topic="javascript" data-type="tutorials">
+      <img class="card-img-top" src="assets/card-previews/javascript/code-guppy.png" alt="This is a screenshot of the codecombat.com website.">
+      <div class="card-body">
+        <h5 class="card-title">Code Guppy: Coding for kids, teens, and creative adults.</h5>
+        <h6 class="card-subtitle">codeguppy.com</h6>
+        <span class="badge badge-pill badge-tutorials">#tutorials</span>
+        <span class="badge badge-pill badge-javascript">#javascript</span>
+        <p class="card-text">Where kids and adults alike learn JavaScript coding through fun and easy to follow tutorials.</p>
+        <a href="https://codeguppy.com/" class="btn btn-primary card-redirect-button redirect-tutorials">GO CODE!</a>
+      </div>
+    </div>
+    <!-- card 10-->
+    <div class="card filterDiv all-topics all-types courses html css javascript card-courses hvr-ripple-in hvr-float" style="width: 18rem;" data-topic="html,css,javascript" data-type="courses">
+      <img class="card-img-top" src="assets/card-previews/general/cs50-intro-compscience.jpg" alt="">
+      <div class="card-body">
+        <h5 class="card-title">CS50'S INTRODUCTION TO COMPUTER SCIENCE</h5>
+        <h6 class="card-subtitle">Harvard edX</h6>
+        <span class="badge badge-pill badge-courses">#courses</span>
+        <span class="badge badge-pill badge-html">#html</span>
+        <span class="badge badge-pill badge-css">#css</span>
+        <span class="badge badge-pill badge-javascript">#javascript</span>
+        <span class="badge badge-pill badge-cert">#cert</span>
+        <p class="card-text">An introduction to the intellectual enterprises of computer science and the art of programming.</p>
+        <a href="https://online-learning.harvard.edu/course/cs50-introduction-computer-science" class="btn btn-primary card-redirect-button redirect-courses">WATCH A VIDEO!</a>
+      </div>
+    </div>
+    <!-- card 11 -->
+    <div class="card filterDiv all-topics all-types games css card-games hvr-ripple-in hvr-float" style="width: 18rem;" data-topic="css" data-type="games">
+      <img class="card-img-top" src="assets/card-previews/html-css/flexbox-froggy.png" alt="">
+      <div class="card-body">
+        <h5 class="card-title">FLEXBOX FROGGY: A GAME FOR LEARNING CSS FLEXBOX</h5>
+        <h6 class="card-subtitle">flexboxfroggy.com</h6>
+        <span class="badge badge-pill badge-games">#games</span>
+        <span class="badge badge-pill badge-css">#css</span>
+        <p class="card-text">Help Froggy and friends by writing CSS code!</p>
+        <a href="https://flexboxfroggy.com/" class="btn btn-primary card-redirect-button redirect-games">GO PLAY!</a>
+      </div>
+    </div>
+  <!-- card 12 -->
+  <div class="card filterDiv  all-topics all-types courses javascript card-courses hvr-ripple-in hvr-float" style="width: 18rem;" data-topic="javascript" data-type="courses">
+    <img class="card-img-top" src="assets/card-previews/javascript/w3-javascript-intro.png" alt="">
+    <div class="card-body">
+      <h5 class="card-title">JAVASCRIPT INTRODUCTION</h5>
+      <h6 class="card-subtitle">W3C edX</h6>
+      <span class="badge badge-pill badge-courses">#courses</span>
+      <span class="badge badge-pill badge-javascript">#javascript</span>
+      <span class="badge badge-pill badge-cert">#cert</span>
+      <p class="card-text">Learn JavaScript, a Web development programming language, to add interactivity to your Web pages, and become an expert Web developer.</p>
+      <a href="https://thecodingtrain.com/" class="btn btn-primary card-redirect-button redirect-courses">WATCH A VIDEO!</a>
+    </div>
+  </div>
+</div>
+<!-- card 13 -->
+<div class="card filterDiv all-topics all-types games javascript card-games hvr-ripple-in hvr-float" style="width: 18rem;" data-topic="javascript" data-type="games">
+  <img class="card-img-top" src="assets/card-previews/javascript/scratch.png" alt="This is a screenshot of the scratch.mit.edu website.">
+  <div class="card-body">
+    <h5 class="card-title">SCRATCH: IMAGINE, PROGRAM, SHARE</h5>
+    <h6 class="card-subtitle">scratch.mit.edu</h6>
+    <span class="badge badge-pill badge-games">#games</span>
+    <span class="badge badge-pill badge-javascript">#javascript</span>
+    <p class="card-text">Scratch is a free programming language and online community where you can create your own interactive stories, games, and animations.</p>
+    <a href="https://scratch.mit.edu/" class="btn btn-primary card-redirect-button redirect-games">GO PLAY!</a>
+  </div>
+</div>
+<!-- card 14 -->
+<div class="card filterDiv all-topics all-types courses javascript card-courses hvr-ripple-in hvr-float" style="width: 18rem;" data-topic="javascript" data-type="courses">
+  <img class="card-img-top" src="assets/card-previews/javascript/fcc-javascript-datalg.png" alt="">
+  <div class="card-body">
+    <h5 class="card-title">freeCodeCamp: Javascript Algorithms and Data Structures Certification (300 hrs)</h5>
+    <h6 class="card-subtitle">freecodecamp.org</h6>
+    <span class="badge badge-pill badge-courses">#courses</span>
+    <span class="badge badge-pill badge-javascript">#javascript</span>
+    <span class="badge badge-pill badge-cert">#cert</span>
+    <p class="card-text">Foundational knowlege of Javscript, it's data structures and algorithms.</p>
+    <a href="https://www.freecodecamp.org/learn" class="btn btn-primary card-redirect-button redirect-courses">HEAD TO CLASS!</a>
+  </div>
+</div>
+<!-- card 15 -->
+<div class="card filterDiv all-topics all-types games html javascript python card-games hvr-ripple-in hvr-float" style="width: 18rem;" data-topic="javascript,python,html" data-type="games">
+  <img class="card-img-top" src="assets/card-previews/general/code-combat.png" alt="This is a screenshot of the codecombat.com website.">
+  <div class="card-body">
+    <h5 class="card-title">CodeCombat</h5>
+    <h6 class="card-subtitle">codecombat.com</h6>
+    <span class="badge badge-pill badge-games">#games</span>
+    <span class="badge badge-pill badge-html">#html</span>
+    <span class="badge badge-pill badge-javascript">#javascript</span>
+    <span class="badge badge-pill badge-python">#python</span>
+    <p class="card-text"> Learn Python, JavaScript, and HTML as you solve puzzles and learn to make your own coding games.</p>
+    <a href="https://codecombat.com/" class="btn btn-primary card-redirect-button redirect-games">GO PLAY!</a>
+  </div>
+</div>
+</div>
+<!-- card 16-->
+<div class="card filterDiv all-topics all-types games html javascript python card-games hvr-ripple-in hvr-float" style="width: 18rem;" data-topic="javascript,python,html" data-type="games">
+  <img class="card-img-top" src="assets/card-previews/general/code-combat.png" alt="This is a screenshot of the codecombat.com website.">
+  <div class="card-body">
+    <h5 class="card-title">CodeCombat</h5>
+    <h6 class="card-subtitle">codecombat.com</h6>
+    <span class="badge badge-pill badge-games">#games</span>
+    <span class="badge badge-pill badge-html">#html</span>
+    <span class="badge badge-pill badge-javascript">#javascript</span>
+    <span class="badge badge-pill badge-python">#python</span>
+    <p class="card-text"> Learn Python, JavaScript, and HTML as you solve puzzles and learn to make your own coding games.</p>
+    <a href="https://codecombat.com/" class="btn btn-primary card-redirect-button redirect-games">GO PLAY!</a>
+  </div>
+</div>
+</div>
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+<!-- snippets -->
+<!-- 
+<div class="card card-type hvr-ripple-in hvr-float" style="width: 18rem;" data-topic="topic" data-type="type">
+  <img class="card-img-top" src="assets/card-previews/html-css/flexbox-froggy.png" alt="">
+  <div class="card-body">
+    <h5 class="card-title">Write Title Here</h5>
+    <h6 class="card-subtitle">sourcewebsite.com</h6>
+    <span class="badge badge-pill badge-type">#type</span>
+    <span class="badge badge-pill badge-topic">#topic</span>
+    <p class="card-text">insert description here!/p>
+    <a href="" class="btn btn-primary card-redirect-button redirect-type">MESSAGE</a>
+  </div>
+</div>
+</div> -->
