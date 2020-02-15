@@ -5,128 +5,32 @@ body {
   padding-right: 30px;
   text-align: center;
 }
+.header-box{
+  text-align: center;
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 400px;
+}
+.card {
+  margin-bottom: 30px;
+}
 
 .row {
-  /* border: .5px solid white; */
   text-align: center;
   padding-right: none;
   margin-bottom: 40px;
   padding: 10px;
+  justify-content: space-evenly;
 }
-.card-rows {
-  float: right;
+/* LOGO IMAGE */
+#logo-box {
+  width: 520px;
+  height: 400px;
+  margin: auto;
+  border:none;
 }
-
- /* cards */
-
- .card {
-   background-color: #1a1a1d;
-   border: 4px solid #4e4e50;
-   margin-right: 15px;
- }
- /* individual card styling */
- badge-html {
-   background-color: #F9C35e;
- }
-  .card-games {
-    border-color: #01b4bc;
-  }
-  .redirect-games {
-  background-color: #01b4bc;
-}
-  .badge-games{
-    background-color: #01b4bc;
-  }
-  .badge-tutorials {
-    background-color: #5fa55a;
-  }
-  .badge-books {
-    background-color: #f6d51f;
-  }
-  .badge-courses {
-    background-color: #fa8925;
-  }
-  .badge-html {
-    background-color: #3B2317;
-  }
-  .badge-css {
-    background-color: #F15A25;
-  }
-  .badge-javascript {
-    background-color: #420972;
-  }
-  .badge-python {
-    background-color: #D3389D;
-  }
-  .badge-cert {
-    background-color: silver;
-  }
-  /*  */
-  .card-tutorials {
-    border-color: #5fa55a;
-  }
-  .redirect-tutorials {
-    background-color: #5fa55a;
-  }
-  .card-courses {
-    border-color: #fa8925;
-  }
-  .redirect-courses {
-    background-color: #fa8925;
-  }
-  .card-books {
-    border-color: #f6d51f;
-  }
-  .redirect-books {
-    background-color: #f6d51f;
-  }
-  /*  */
- .card-title {
-  font-family: 'Coming Soon', cursive;
-  color: #c3073f;
- }
-  .card-subtitle {
-    font-family: 'Open Sans', sans-serif;
-    color: #c3073f;
-    margin-bottom: 5px;
-   }
-
- .card-text {
-  font-family: 'Open Sans', sans-serif;
-  color: #4e4e50;
-  margin-top: 5px;
- }
-
- .card-redirect-button {
-   border-color: #4e4e50;
-   /* background-color: #c3073f; */
-   font-family: 'Coming Soon', cursive;
- }
-
- #logo-box {
-   width: 520px;
-   height: 400px;
-   margin: auto;
-   border:none;
- }
-
- .header {
-   text-align: center;
- }
- .nav-pages {
-   padding-top: 170px;
-   color: #ECEDEF;
-   font-family: 'Coming Soon', cursive;
- }
- .main-nav {
-   text-decoration: underline;
-   color: #ECEDEF;
- }
- .main-nav:hover {
-   color: gray;
- }
-/* logo animation */
- .hvr-float {
+/* logo & card animation */
+.hvr-float {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -179,26 +83,195 @@ body {
   -webkit-transform: skew(10deg);
   transform: skew(10deg);
 }
-/* card animation */
+/* NAVIGATION */
+.nav-pages {
+  padding-top: 170px;
+  color: #ECEDEF;
+  font-family: 'Coming Soon', cursive;
+}
+.main-nav {
+  text-decoration: underline;
+  color: #ECEDEF;
+}
+.main-nav:hover {
+  color: gray;
+}
 
-.btn-menu {
+ /* filter row */
+.filter-row {
+    /* border: 2px solid red; */
+}
+ .btn-menu {
   background-color: #1a1a1d;
   font-family: 'Open Sans', sans-serif;
   font-size: 25px;
   margin-right: 15px;
+  color: white;
 }
-#button-menu-htmlCSS {
-  border: 2px solid #3B2317;
-  color:#3B2317;
+.filter-instructions {
+    font-family: 'Coming Soon', cursive;
+}
+#button-menu-all {
+    background-color: gray;
+}
+#button-menu-html {
+  background-color: #3B2317;
+}
+#button-menu-css {
+  background-color: #F15A25;
+
 }
 #button-menu-javascript {
-  border: 2px solid #420972;
-  color: #420972;
+  background-color: #420972;
 }
 #button-menu-python {
-  border: 2px solid #D3389D;
-  color: #D3389D;
+  background-color: #D3389D;
+
 }
+.btn-sm {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+#button-menu-courses {
+    background-color: #D3389D;
+}
+#button-menu-tutorials {
+    background-color: #5fa55a;
+}
+#button-menu-games {
+    background-color: #01b4bc;
+}
+#button-menu-books {
+    background-color: #C8B24B;
+}
+
 .button-menu-bar {
-  padding-left: 250px;
+  /* padding-left: 230px; */
   }
+
+
+
+
+/* CARDS */
+ .card {
+   background-color: #1a1a1d;
+   border: 4px solid #4e4e50;
+   margin-right: 15px;
+ }
+ .card-title {
+  font-family: 'Coming Soon', cursive;
+  color: #c3073f;
+ }
+ .card-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  color: #c3073f;
+  margin-bottom: 5px;
+ }
+  .card-text {
+  font-family: 'Open Sans', sans-serif;
+  color: #4e4e50;
+  margin-top: 5px;
+  }
+  .card-redirect-button {
+  border-color: #4e4e50;
+  font-family: 'Coming Soon', cursive;
+ }
+  /* card #tags */
+.card-games {
+  border-color: #01b4bc;
+  }
+  .redirect-games {
+  background-color: #01b4bc;
+}
+.card-tutorials {
+  border-color: #5fa55a;
+}
+.redirect-tutorials {
+  background-color: #5fa55a;
+}
+.card-courses {
+  border-color: #fa8925;
+}
+.redirect-courses {
+  background-color: #fa8925;
+}
+.card-books {
+  border-color: #C8B24B;
+}
+.redirect-books {
+  background-color: #C8B24B;
+}
+
+/* BADGES "#" */
+  .badge-games{
+    background-color: #01b4bc;
+  }
+  .badge-html {
+    background-color: #F9C35e;
+  }
+  .badge-tutorials {
+    background-color: #5fa55a;
+  }
+  .badge-books {
+    background-color: #C8B24B;
+  }
+  .badge-courses {
+    background-color: #fa8925;
+  }
+  .badge-html {
+    background-color: #3B2317;
+  }
+  .badge-css {
+    background-color: #F15A25;
+  }
+  .badge-javascript {
+    background-color: #420972;
+  }
+  .badge-python {
+    background-color: #D3389D;
+  }
+  .badge-cert {
+    background-color: silver;
+  }  
+/* FILTER SYSTEM */
+.container {
+    overflow: hidden;
+  }
+  
+  .filterDiv {
+    /* float: left;
+    background-color: #2196F3;
+    color: #ffffff;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 2px; */
+    /* display: none; Hidden by default */
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    /* border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1; */
+    cursor: pointer;
+  }
+  
+  /* Add a light grey background on mouse-over */
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  /* Add a dark background to the active button */
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+
